@@ -33,6 +33,9 @@ def ingresarDato():
 def home():
     return render_template('empleados/index.html')
 
+@app.route('/create')
+def crear():
+    return render_template('empleados/create.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
